@@ -28,7 +28,7 @@ var TopicCell = React.createClass({
           <Text style={styles.topicTitle}>{this.props.topic.title}</Text>
           <View style={styles.topicDetailRow}>
             <Text style={styles.topicTab}>{this.props.topic.tab}</Text>
-            <Text>{this.props.topic.author.loginname} | {this.props.topic.reply_count}回复 | {this.props.topic.visit_count}阅读</Text>
+            <Text style={styles.topicInfo}>{this.props.topic.author.loginname} | {this.props.topic.reply_count}回复 | {this.props.topic.visit_count}阅读</Text>
           </View>
           <View/>
         </View>

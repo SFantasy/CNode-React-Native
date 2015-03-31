@@ -32,12 +32,14 @@ module.exports = StyleSheet.create({
   },
   topicDetailRow: {
     flexDirection: 'row',
-    color: '#999999',
-    fontSize: 12,
     marginTop: 5
   },
   topicTab: {
     color: '#80BD01',
     marginRight: 10
+  },
+  topicInfo: {
+    color: '#999999',
+    fontSize: 12
   }
 });

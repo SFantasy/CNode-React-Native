@@ -24,6 +24,8 @@ var stylesheet = require('./style');
 
 var TopicCell = require('./Elements/TopicCell');
 
+var TopicView = require('../Topic');
+
 var HomeViewClass = React.createClass({
   getInitialState: function() {
     return {
@@ -67,8 +69,19 @@ var HomeViewClass = React.createClass({
   },
   renderTopicCell: function (topic) {
     return (
-      <TopicCell topic={topic} />
+      <TopicCell
+        onSelect={() => this.selectTopic(topic)}
+        topic={topic} />
     );
+  },
+  selectTopic: function (topic) {
+    this.props.navigator.push({
+      title: topic.title,
+      component: TopicView,
+      passProps: {
+        topicId: topic.id
+      }
+    });
   }
 });
 
