@@ -5,7 +5,7 @@
  * @description
  * @author shaochunhua <shaochunhua@tuniu.com>
  * @create 2015-03-31
- * @update 2015-03-31
+ * @update 2015-04-02
  */
 
 'use strict';
@@ -23,7 +23,6 @@ var api = require('../../api');
 var stylesheet = require('./style');
 
 var TopicCell = require('./Elements/TopicCell');
-
 var TopicView = require('../Topic');
 
 var HomeViewClass = React.createClass({
@@ -33,9 +32,11 @@ var HomeViewClass = React.createClass({
       loaded: false
     };
   },
+
   componentDidMount: function () {
     this.fetchData();
   },
+
   fetchData: function () {
     fetch(api.topics)
       .then((response) => response.json())
@@ -46,12 +47,13 @@ var HomeViewClass = React.createClass({
         });
       }).done();
   },
+
   render: function () {
     if (!this.state.loaded) {
       return (
         <View style={stylesheet.container}>
           <Text style={stylesheet.loadingText}>
-            Data fetching...
+            数据加载中...
           </Text>
         </View>
       );
@@ -59,6 +61,7 @@ var HomeViewClass = React.createClass({
 
     return this.renderListView();
   },
+
   renderListView: function () {
     return (
       <ListView
@@ -67,6 +70,7 @@ var HomeViewClass = React.createClass({
         style={stylesheet.topicListView} />
     )
   },
+
   renderTopicCell: function (topic) {
     return (
       <TopicCell
@@ -74,6 +78,7 @@ var HomeViewClass = React.createClass({
         topic={topic} />
     );
   },
+
   selectTopic: function (topic) {
     this.props.navigator.push({
       title: topic.title,

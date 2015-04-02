@@ -27,7 +27,7 @@ module.exports = StyleSheet.create({
     marginBottom: 10
   },
   topicTitle: {
-    color: '#6666666',
+    color: '#666666',
     fontSize: 16
   },
   topicDetailRow: {

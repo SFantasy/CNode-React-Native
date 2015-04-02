@@ -18,12 +18,15 @@ var {
 
 module.exports = StyleSheet.create({
   container: {
-    backgroundColor: '#F6F6EF'
+    backgroundColor: '#FFF'
   },
   loadingText: {
-    fontSize: 24,
+    fontSize: 20,
     textAlign: 'center',
-    color: '#000000'
+    marginTop: 80,
+    marginBottom: 10,
+    marginRight: 10,
+    color: '#999',
   },
   topicListView: {
     backgroundColor: '#F0F0F0',

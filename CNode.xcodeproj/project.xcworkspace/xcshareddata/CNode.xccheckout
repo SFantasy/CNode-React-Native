@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B09075C0-F1DB-4468-9645-D64B9473129D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CNode</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6100EBA69EC8007E76E85AF30374ADA4EAE7520D</key>
+		<string>github.com:SFantasy/CNode-React-Native.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CNode.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6100EBA69EC8007E76E85AF30374ADA4EAE7520D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:SFantasy/CNode-React-Native.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6100EBA69EC8007E76E85AF30374ADA4EAE7520D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6100EBA69EC8007E76E85AF30374ADA4EAE7520D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CNode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
