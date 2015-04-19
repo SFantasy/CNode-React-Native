@@ -2,6 +2,7 @@
 
 // Module dependencies
 var React = require('react-native');
+var RefreshableListView = require('react-native-refreshable-listview');
 
 var {
   Text,
@@ -54,10 +55,12 @@ var HomeViewClass = React.createClass({
 
   renderListView: function () {
     return (
-      <ListView
+      <RefreshableListView
         dataSource={this.state.dataSource}
         renderRow={this.renderTopicCell}
-        style={stylesheet.topicListView} />
+        style={stylesheet.topicListView}
+        loadData={this.fetchData}
+        renderDescription="数据加载中..." />
     )
   },
 
