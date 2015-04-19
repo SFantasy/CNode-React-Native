@@ -1,13 +1,3 @@
-/**
- *
- * index.js
- *
- * @description
- * @author shaochunhua <shaochunhua@tuniu.com>
- * @create 2015-03-31
- * @update 2015-04-02
- */
-
 'use strict';
 
 // Module dependencies
